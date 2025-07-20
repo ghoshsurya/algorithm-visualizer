@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Visualizer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="max-w-4xl mx-auto p-4">
+        <h1 class="text-2xl font-bold mb-4">Algorithm Visualizer</h1>
+<h1 class="text-2xl font-bold mb-4">Algorithm </h1>
+        <div class="flex flex-col md:flex-row gap-4 items-center">
+            <input id="userInput" class="border p-2 w-full md:w-1/2" placeholder="Enter numbers (e.g., 5,3,1,4,2)" />
+            <button id="randomBtn" class="bg-blue-500 text-white px-4 py-2 rounded">Random</button>
+            <select id="algoSelector" class="border p-2">
+                <option>Bubble Sort</option>
+                <option>Selection Sort</option>
+                <option>Insertion Sort</option>
+                <option>Merge Sort</option>
+                <option>Quick Sort</option>
+                <option>Heap Sort</option>
+                <option>Counting Sort</option>
+                <option>Radix Sort</option>
+                <option>Bucket Sort</option>
+            </select>
+            <input type="range" min="50" max="1000" value="250" id="speedControl" class="w-32" />
+        </div>
+
+        <div class="flex gap-4 mt-4">
+            <button id="playBtn" class="bg-green-500 text-white px-4 py-2 rounded">Play</button>
+            <button id="pauseBtn" class="bg-yellow-400 text-white px-4 py-2 rounded">Pause</button>
+            <button id="resetBtn" class="bg-red-500 text-white px-4 py-2 rounded">Reset</button>
+        </div>
+
+        <div id="visualizerContainer" class="mt-8 h-72 flex items-end justify-center gap-1 bg-white p-4 border rounded"></div>
+    </div>
+
+    <script src="/static/js/visualization.js"></script>
+</body>
+</html>
